@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import SideMenu from './Components/SideMenu/SideMenu';
+import { GlobalStyles } from './GlobalStyles/GlobalStyles';
+import { Provider } from 'react-redux';
+import Store from './store/index';
+import Main from './Components/Main/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="TotalContainer">
+      <Provider store={Store}>
+        <GlobalStyles />
+        <SideMenu />
+        <Main />
+      </Provider>
     </div>
   );
 }
