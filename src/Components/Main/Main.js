@@ -1,10 +1,9 @@
 import React from 'react';
 import { Container } from './Main.style';
 import { connect } from 'react-redux';
-
 import Route from '../../route';
 
-function Main({ MenuState }) {
+function Main({ MenuState, children }) {
   return (
     <Container MenuState={MenuState}>
       <Route />
