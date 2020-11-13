@@ -1,6 +1,6 @@
-export function AlterarPagina(Pagina) {
+export function AlterarPagina(Page) {
   return {
     type: 'SetPage',
-    Pagina,
+    Page,
   };
 }

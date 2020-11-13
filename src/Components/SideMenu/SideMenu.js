@@ -5,6 +5,7 @@ import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
 import { connect } from 'react-redux';
 import * as MenuStateActions from '../../store/modules/MenuState/actions';
+import * as PageActions from '../../store/modules/Page/actions';
 
 function SideMenu({ Page, MenuState, dispatch }) {
   const [Height, setHeight] = React.useState(window.innerHeight);
@@ -16,6 +17,10 @@ function SideMenu({ Page, MenuState, dispatch }) {
   window.addEventListener('resize', () => {
     setHeight(window.innerHeight);
   });
+
+  function handleMenuClick(page) {
+    dispatch(PageActions.AlterarPagina(page));
+  }
 
   return (
     <Container MenuState={MenuState} Height={Height}>
@@ -30,22 +35,30 @@ function SideMenu({ Page, MenuState, dispatch }) {
         </ContainerInfo>
       </Header>
       <Menu>
-        <Item MyPage={0} Page={Page}>
-          <FaHome />
-          <span>Introdução</span>
-        </Item>
-        <Item MyPage={1} Page={Page}>
-          <FaUser />
-          <span>Quem Sou</span>
-        </Item>
-        <Item MyPage={2} Page={Page}>
-          <BsGrid3X3GapFill />
-          <span>Portifolio</span>
-        </Item>
-        <Item MyPage={3} Page={Page}>
-          <GrMail />
-          <span>Contato</span>
-        </Item>
+        <a href="/">
+          <Item MyPage={0} Page={Page}>
+            <FaHome />
+            <span>Introdução</span>
+          </Item>
+        </a>
+        <a href="/sobre">
+          <Item MyPage={1} Page={Page} onClick={() => handleMenuClick(1)}>
+            <FaUser />
+            <span>Quem Sou</span>
+          </Item>
+        </a>
+        <a href="/portifolio">
+          <Item MyPage={2} Page={Page} onClick={() => handleMenuClick(2)}>
+            <BsGrid3X3GapFill />
+            <span>Portifolio</span>
+          </Item>
+        </a>
+        <a href="/contato">
+          <Item MyPage={3} Page={Page} onClick={() => handleMenuClick(3)}>
+            <GrMail />
+            <span>Contato</span>
+          </Item>
+        </a>
       </Menu>
       <Social>
         <FaLinkedin />

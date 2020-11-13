@@ -1,7 +1,14 @@
 import React from 'react';
 
-function Portifolio() {
-  return <div>Portifolio</div>;
+import ComingSoon from '../ComingSoon/ComingSoon';
+import * as PageActions from '../../store/modules/Page/actions';
+import { connect } from 'react-redux';
+
+function Portifolio(props) {
+  React.useEffect(() => {
+    props.dispatch(PageActions.AlterarPagina(2));
+  });
+  return <ComingSoon />;
 }
 
-export default Portifolio;
+export default connect()(Portifolio);

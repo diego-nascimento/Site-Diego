@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container } from './Main.style';
 import { connect } from 'react-redux';
-import Introducao from '../../Pages/Introducao/Introducao';
+
+import Route from '../../route';
 
 function Main({ MenuState }) {
   return (
     <Container MenuState={MenuState}>
-      <Introducao />
+      <Route />
     </Container>
   );
 }

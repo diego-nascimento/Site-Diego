@@ -4,8 +4,14 @@ import { Container, TextContainer } from './Introducao.style';
 import BackgroundIntro from '../../Components/IntroBackground/IntroBackground';
 import Typical from 'react-typical';
 import ReactTypingEffect from 'react-typing-effect';
+import { connect } from 'react-redux';
+import * as PageActions from '../../store/modules/Page/actions';
 
-function Introducao() {
+function Introducao(props) {
+  React.useEffect(() => {
+    props.dispatch(PageActions.AlterarPagina(0));
+  });
+
   return (
     <Container>
       <BackgroundIntro />
@@ -17,8 +23,9 @@ function Introducao() {
         <h2>
           <ReactTypingEffect
             cursorRenderer={(cursor) => <span>{cursor}</span>}
-            typingDelay={200}
+            eraseDelay={1000}
             eraseSpeed={100}
+            typingDelay={1000}
             speed={100}
             text={['NodeJs', 'ReactJs', 'React Native']}
             displayTextRenderer={(text, i) => {
@@ -31,4 +38,4 @@ function Introducao() {
   );
 }
 
-export default Introducao;
+export default connect()(Introducao);
