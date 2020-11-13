@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Star } from './IntroBackground.styles';
 
 function IntroBackground() {
-  const [AmountStars] = React.useState(200);
+  const [AmountStars] = React.useState(80);
 
   const [Stars] = React.useState(() => {
     let estrelas = [];

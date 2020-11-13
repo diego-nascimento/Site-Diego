@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const Star = styled.div.attrs(() => ({
   Duration: Math.random() * (2 - 1 + 1) + 1,
-  Size: Math.random() * 6,
+  Size: Math.random() * 10,
   Left: Math.floor(Math.random() * window.innerWidth),
   Delay: Math.random() * (10 - 0 + 1) + 0,
 }))`
