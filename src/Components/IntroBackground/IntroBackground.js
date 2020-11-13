@@ -3,9 +3,7 @@ import { Container, Star } from './IntroBackground.styles';
 
 function IntroBackground() {
   const [Stars, setStars] = React.useState([]);
-  const [AmountStars, setAmountStars] = React.useState(50);
-
-  React.useCallback();
+  const [AmountStars] = React.useState(50);
 
   React.useEffect(() => {
     if (Stars.length < AmountStars) {
