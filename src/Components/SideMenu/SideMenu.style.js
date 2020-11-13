@@ -10,12 +10,13 @@ export const Container = styled.aside`
   flex-direction: column;
   position: relative;
   transition: 0.5s;
-  cursor: pointer;
   max-width: 70%;
   z-index: 99;
+  font-family: 'Roboto', sans-serif;
 
   @media (max-width: 1200px) {
-    transform: ${(props) => (props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)')};
+    transform: ${(props) =>
+      props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)'};
   }
 `;
 
@@ -119,13 +120,16 @@ export const Item = styled.li.attrs((props) => ({
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
   font-size: 1.3em;
   text-transform: capitalize;
   letter-spacing: 1px;
   user-select: none;
   transition: 0.3s;
-  color: ${(props) => (props.MyPage === props.Page ? 'white' : Styles.asideFontColor)};
-  background-color: ${(props) => (props.MyPage === props.Page ? Styles.asideSelectedBG : 'none')};
+  color: ${(props) =>
+    props.MyPage === props.Page ? 'white' : Styles.asideFontColor};
+  background-color: ${(props) =>
+    props.MyPage === props.Page ? Styles.asideSelectedBG : 'none'};
   box-shadow: ${(props) =>
     props.MyPage === props.Page
       ? `0px 5px 10px ${Styles.asideFontColor}, 0px -5px 10px ${Styles.asideFontColor} `

@@ -7,6 +7,9 @@ export const GlobalStyles = createGlobalStyle`
     outline: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
   }
 
   ul, li{
@@ -18,13 +21,14 @@ export const GlobalStyles = createGlobalStyle`
   width: 100vw;
   position :relative;
   display: flex;
+  
 }
  
 
   body{
     width: 100vw;
     height: 100%;
-    font-family: 'Roboto Condensed', sans-serif;  
+    font-family: 'Roboto Mono', monospace;
    
   }
 
