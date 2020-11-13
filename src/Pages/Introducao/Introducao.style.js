@@ -22,14 +22,16 @@ export const TextContainer = styled.div`
   font-weight: 500;
 
   h1,
-  h2 {
+  h2,
+  span {
     text-transform: uppercase;
   }
 
   h1 {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 400;
+    letter-spacing: 0.1em;
 
     @media (max-width: 650px) {
       font-size: 2em;
@@ -43,7 +45,8 @@ export const TextContainer = styled.div`
       font-size: 1.1em;
     }
   }
-  h2 {
+  h2,
+  span {
     color: ${Styles.asideFontColor};
     margin-top: 10px;
     letter-spacing: 3px;
@@ -59,5 +62,9 @@ export const TextContainer = styled.div`
     @media (max-width: 350px) {
       font-size: 0.6em;
     }
+  }
+
+  span {
+    color: white;
   }
 `;

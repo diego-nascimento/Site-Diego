@@ -15,8 +15,7 @@ export const Container = styled.aside`
   font-family: 'Roboto', sans-serif;
 
   @media (max-width: 1200px) {
-    transform: ${(props) =>
-      props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)'};
+    transform: ${(props) => (props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)')};
   }
 `;
 
@@ -41,7 +40,7 @@ export const ButtonMenuContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    right: -60px;
+    right: -90px;
   }
 
   @media (max-width: 300px) {
@@ -91,7 +90,7 @@ export const ContainerInfo = styled.div`
       font-size: 1em;
     }
 
-    @media (max-width: 300px) {
+    @media (max-width: 330px) {
       font-size: 0.7em;
     }
   }
@@ -100,7 +99,7 @@ export const ContainerInfo = styled.div`
     font-size: 1em;
     letter-spacing: 1px;
 
-    @media (max-width: 300px) {
+    @media (max-width: 330px) {
       font-size: 0.5em;
     }
   }
@@ -126,10 +125,8 @@ export const Item = styled.li.attrs((props) => ({
   letter-spacing: 1px;
   user-select: none;
   transition: 0.3s;
-  color: ${(props) =>
-    props.MyPage === props.Page ? 'white' : Styles.asideFontColor};
-  background-color: ${(props) =>
-    props.MyPage === props.Page ? Styles.asideSelectedBG : 'none'};
+  color: ${(props) => (props.MyPage === props.Page ? 'white' : Styles.asideFontColor)};
+  background-color: ${(props) => (props.MyPage === props.Page ? Styles.asideSelectedBG : 'none')};
   box-shadow: ${(props) =>
     props.MyPage === props.Page
       ? `0px 5px 10px ${Styles.asideFontColor}, 0px -5px 10px ${Styles.asideFontColor} `
@@ -141,8 +138,8 @@ export const Item = styled.li.attrs((props) => ({
     padding: 0px 10px;
   }
 
-  @media (max-width: 300px) {
-    font-size: 0.9em;
+  @media (max-width: 330px) {
+    font-size: 0.7em;
     padding: 0px 15px;
   }
 `;
