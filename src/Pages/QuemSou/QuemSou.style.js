@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   height: 100vh;
   background: white;
   display: flex;
-  padding: 10px 30px;
   background: ${Styles.asideSelectedBG};
   position: relative;
   overflow-x: hidden;
@@ -57,7 +56,7 @@ export const SpaceShip = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  padding: 100px;
 
   @media (max-width: 700px) {
     height: 100px;
@@ -73,12 +72,24 @@ export const SpaceShip = styled.div`
     }
 
     @media (max-width: 350px) {
-      transform: scale(0.5);
+      transform: scale(0.7);
     }
   }
 `;
 
 export const Textos = styled.div`
+  padding: 40px 40px;
+  @media (max-width: 1200px) {
+    padding: 30px 30px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px 20px;
+  }
+  @media (max-width: 600px) {
+    padding: 15px 15px;
+  }
+
   h1 {
     color: ${Styles.asideFontColor};
     text-transform: uppercase;

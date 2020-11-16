@@ -47,9 +47,9 @@ function QuemSou(props) {
             a minha paixão.
           </p>
           <p>
-            Após isso me envolvi no desenvolvimento de uma ferramenta de BI que se chamava Qira, onde a partir de meus
-            conhecimentos em tecnologias <span>web</span> e <span>mobile</span>, estive durante algum tempo
-            desenvolvendo <span>prototipos de telas de Dashboard</span> para a ferramenta.
+            Após isso me envolvi no desenvolvimento de uma <span>ferramenta de BI</span> que se chamava{' '}
+            <span>Qira</span>, onde a partir de meus conhecimentos em tecnologias <span>web</span> e <span>mobile</span>
+            , estive durante algum tempo desenvolvendo <span>prototipos de telas de Dashboard</span> para a ferramenta.
           </p>
           <p>
             Com a necessidade de um backend mais proprio para a ferramenta, conheci o <span>NodeJs</span>, onde conheci
