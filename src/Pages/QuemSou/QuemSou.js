@@ -1,7 +1,7 @@
 import React from 'react';
 import * as PageActions from '../../store/modules/Page/actions';
 import { connect } from 'react-redux';
-import { Wrapper, Container, ImagemContainer, Textos } from './QuemSou.style';
+import { Wrapper, Container, ImagemContainer, Textos, SpaceShip } from './QuemSou.style';
 import { Link } from 'react-router-dom';
 import IntroBackground from '../../Components/IntroBackground/IntroBackground';
 
@@ -10,12 +10,25 @@ function QuemSou(props) {
     props.dispatch(PageActions.AlterarPagina(1));
   });
 
+  const [AmountFire] = React.useState(5);
+
+  const [Fire] = React.useState(() => {
+    let chamas = [];
+    for (let i = 0; i < AmountFire; i++) {
+      chamas.push(<div className="chama" key={Math.random()} />);
+    }
+    return chamas;
+  });
+
   return (
     <Wrapper>
       <IntroBackground />
       <Container>
         <ImagemContainer>
-          <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/rocket.png" alt="Foguetinho" />
+          <SpaceShip>
+            <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/rocket.png" alt="Foguetinho" />
+            {Fire.map((chama) => chama)}
+          </SpaceShip>
         </ImagemContainer>
         <Textos>
           <h1>Quem Sou??</h1>
@@ -42,7 +55,6 @@ function QuemSou(props) {
             Com a necessidade de um backend mais proprio para a ferramenta, conheci o <span>NodeJs</span>, onde conheci
             e estudei com bem mais afinco a <span>Stack Javascript</span> que estudo até atualmente.
           </p>
-
           <p>
             Para conhecer meus trabalhos, você pode
             <Link to="/portifolio">
@@ -54,7 +66,6 @@ function QuemSou(props) {
             </Link>{' '}
             para ser enviado a minha página de contato!
           </p>
-
           <p style={{ textAlign: 'center' }}>Te aguardo lá!!</p>
         </Textos>
       </Container>
