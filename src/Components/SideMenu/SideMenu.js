@@ -1,11 +1,26 @@
 import React from 'react';
-import { Container, ButtonMenuContainer, Header, Avatar, ContainerInfo, Menu, Item, Social } from './SideMenu.style';
-import { FaHome, FaUser, FaLinkedin, FaGithub, FaFacebook, FaBars } from 'react-icons/fa';
+import {
+  Container,
+  ButtonMenuContainer,
+  Header,
+  Avatar,
+  ContainerInfo,
+  Menu,
+  Item,
+  Social,
+} from './SideMenu.style';
+import {
+  FaHome,
+  FaUser,
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaBars,
+} from 'react-icons/fa';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
 import { connect } from 'react-redux';
 import * as MenuStateActions from '../../store/modules/MenuState/actions';
-import * as PageActions from '../../store/modules/Page/actions';
 import { Link } from 'react-router-dom';
 
 function SideMenu({ Page, MenuState, dispatch }) {
@@ -20,7 +35,7 @@ function SideMenu({ Page, MenuState, dispatch }) {
   });
 
   function handleMenuClick(page) {
-    dispatch(PageActions.AlterarPagina(page));
+    handleButtonState();
   }
 
   return (
@@ -37,7 +52,7 @@ function SideMenu({ Page, MenuState, dispatch }) {
       </Header>
       <Menu>
         <Link to="/">
-          <Item MyPage={0} Page={Page}>
+          <Item MyPage={0} Page={Page} onClick={() => handleMenuClick()}>
             <FaHome />
             <span>Introdução</span>
           </Item>
