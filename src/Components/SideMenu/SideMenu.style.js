@@ -15,8 +15,7 @@ export const Container = styled.aside`
   font-family: 'Roboto', sans-serif;
 
   @media (max-width: 1200px) {
-    transform: ${(props) =>
-      props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)'};
+    transform: ${(props) => (props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)')};
   }
 `;
 
@@ -29,9 +28,9 @@ export const ButtonMenuContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
+  color: black;
   border-radius: 10px;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   visibility: hidden;
   opacity: 0;
 
@@ -126,10 +125,8 @@ export const Item = styled.li.attrs((props) => ({
   letter-spacing: 1px;
   user-select: none;
   transition: 0.3s;
-  color: ${(props) =>
-    props.MyPage === props.Page ? 'white' : Styles.asideFontColor};
-  background-color: ${(props) =>
-    props.MyPage === props.Page ? Styles.asideSelectedBG : 'none'};
+  color: ${(props) => (props.MyPage === props.Page ? 'white' : Styles.asideFontColor)};
+  background-color: ${(props) => (props.MyPage === props.Page ? Styles.asideSelectedBG : 'none')};
   box-shadow: ${(props) =>
     props.MyPage === props.Page
       ? `0px 5px 10px ${Styles.asideFontColor}, 0px -5px 10px ${Styles.asideFontColor} `

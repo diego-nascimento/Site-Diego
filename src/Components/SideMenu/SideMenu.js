@@ -1,22 +1,6 @@
 import React from 'react';
-import {
-  Container,
-  ButtonMenuContainer,
-  Header,
-  Avatar,
-  ContainerInfo,
-  Menu,
-  Item,
-  Social,
-} from './SideMenu.style';
-import {
-  FaHome,
-  FaUser,
-  FaLinkedin,
-  FaGithub,
-  FaFacebook,
-  FaBars,
-} from 'react-icons/fa';
+import { Container, ButtonMenuContainer, Header, Avatar, ContainerInfo, Menu, Item, Social } from './SideMenu.style';
+import { FaHome, FaUser, FaLinkedin, FaGithub, FaFacebook, FaBars } from 'react-icons/fa';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
 import { connect } from 'react-redux';
