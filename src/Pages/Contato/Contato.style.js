@@ -15,7 +15,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 30px 10px;
+  margin: 5vh 10px;
   flex-direction: column;
   z-index: 50;
 
@@ -66,11 +66,11 @@ export const TextContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
 
     @media (max-width: 350px) {
-      font-size: 0.9rem;
+      font-size: 0.6rem;
     }
   }
 
@@ -99,11 +99,11 @@ export const TextContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-      font-size: 1.7em;
+      font-size: 1.2em;
     }
 
     @media (max-width: 350px) {
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
 `;

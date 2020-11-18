@@ -18,12 +18,16 @@ function Contato(props) {
           <h2>Meus contatos estão abaixo:</h2>
           <div>
             <span>Whatsapp:</span>
-            <a href="google.com.br">(32) 9 9910-7767</a>
+            <a href="https://api.whatsapp.com/send?phone=5532999107767" target="blank">
+              (32) 9 9910-7767
+            </a>
           </div>
 
           <div>
             <span>Instagram:</span>
-            <a href="https://www.instagram.com/diego_carvalhais">@diego_carvalhais</a>
+            <a href="https://www.instagram.com/diego_carvalhais" target="blank">
+              @diego_carvalhais
+            </a>
           </div>
         </TextContainer>
       </Container>
