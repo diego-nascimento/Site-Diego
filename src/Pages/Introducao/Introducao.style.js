@@ -29,12 +29,12 @@ export const TextContainer = styled.div`
 
   h1 {
     color: white;
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 400;
     letter-spacing: 0.1em;
 
     @media (max-width: 650px) {
-      font-size: 2em;
+      font-size: 2rem;
     }
 
     @media (max-width: 450px) {

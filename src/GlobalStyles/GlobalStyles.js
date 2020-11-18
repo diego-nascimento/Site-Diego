@@ -33,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100vw;
     height: 100%;
     font-family: 'Roboto Mono', monospace;
+    font-size: 100%;
   }
 
   #root{
