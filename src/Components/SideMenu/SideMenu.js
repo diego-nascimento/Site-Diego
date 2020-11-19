@@ -53,8 +53,14 @@ function SideMenu({ Page, MenuState, dispatch }) {
             <span>Portifolio</span>
           </Item>
         </Link>
-        <Link to="/contato">
+        <Link to="/Servicos">
           <Item MyPage={3} Page={Page} onClick={() => handleMenuClick(3)}>
+            <GrMail />
+            <span>Serviços</span>
+          </Item>
+        </Link>
+        <Link to="/contato">
+          <Item MyPage={4} Page={Page} onClick={() => handleMenuClick(4)}>
             <GrMail />
             <span>Contato</span>
           </Item>

@@ -6,7 +6,7 @@ import { Wrapper, Container, Titulo, TextContainer } from './Contato.style';
 
 function Contato(props) {
   React.useEffect(() => {
-    props.dispatch(PageActions.AlterarPagina(3));
+    props.dispatch(PageActions.AlterarPagina(4));
   });
   return (
     <Wrapper>

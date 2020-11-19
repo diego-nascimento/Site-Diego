@@ -18,6 +18,7 @@ export const Container = styled.div`
   margin: 5vh 10px;
   flex-direction: column;
   z-index: 50;
+  position: relative;
 
   div {
     margin-bottom: 20px;
@@ -30,6 +31,8 @@ export const Titulo = styled.h1`
   font-size: 3em;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 
   @media (max-width: 1200px) {
     font-size: 2em;
@@ -45,48 +48,50 @@ export const Titulo = styled.h1`
 `;
 
 export const Lista = styled.ul`
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 350px);
-  transition: 0.5;
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 350px);
-  }
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 20px;
+  align-items: center;
+  transition: 0.5s;
 
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    width: 100%;
   }
 `;
 
 export const Item = styled.li`
-  padding: 10px 20px;
-  width: 100%;
-  border: 1px solid white;
-  border-radius: 15px;
-  transition: 0.3s;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  transition: 0.7s;
+  border-radius: 25px;
+  width: 450px;
+  margin: 20px 20px;
 
   :hover {
-    transform: scale(1.02);
+    border: 1px solid white;
   }
 
-  img {
-    width: 100%;
+  svg {
+    font-size: 40px;
+    color: white;
   }
 
   h2 {
+    font-size: 1.3rem;
     color: ${Styles.asideFontColor};
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 1.7rem;
+    margin-top: 20px;
   }
-`;
 
-export const ImageContainer = styled.div`
-  width: 100%;
-  overflow-y: hidden;
-  height: 400px;
-  border-radius: 10px;
+  p {
+    color: white;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    margin-top: 20px;
+  }
 `;

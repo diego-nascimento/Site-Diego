@@ -41,9 +41,11 @@ export const ButtonMenuContainer = styled.div`
 
   @media (max-width: 600px) {
     right: -90px;
+    width: 50px;
+    height: 40px;
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 400px) {
     width: 30px;
     height: 30px;
     right: -40px;
