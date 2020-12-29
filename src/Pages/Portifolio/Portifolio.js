@@ -3,6 +3,10 @@ import { Wrapper, Container, Titulo, Lista, Item, ImageContainer } from './Porti
 import * as PageActions from '../../store/modules/Page/actions';
 import { connect } from 'react-redux';
 import IntroBackground from '../../Components/IntroBackground/IntroBackground';
+import Pedidos from '../../assets/pedidos.png'
+import Ariane from '../../assets/ariane-site.png'
+import Forty from '../../assets/forty.png'
+import Transit from '../../assets/transit.png'
 
 function Portifolio(props) {
   React.useEffect(() => {
@@ -16,27 +20,36 @@ function Portifolio(props) {
         <Lista>
           <Item>
             <h2>Forty</h2>
+            <a href="https://forty.diego-nascimento.com" target="blank">
             <ImageContainer>
-              <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/forty-imagem+2.png" alt="" />
+              <img src={Forty} alt="Pagina Forty" />
             </ImageContainer>
+            </a>
           </Item>
           <Item>
             <h2>Pedidos</h2>
+            <a href="https://pedidos.diego-nascimento.com" target="blank">
             <ImageContainer>
-              <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/pedidos-+imagem+2.png" alt="" />
+              <img src={Pedidos} alt="Pagina de Pedidos" target="blank"/>
             </ImageContainer>
+            </a> 
           </Item>
           <Item>
             <h2>Site de Portifolio</h2>
+            <a href="https://arianemiranda.com" target="blank">
             <ImageContainer>
-              <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/site-ori+imagem+2.png" alt="" />
+              <img src={Ariane} alt="Ariane Miranda Copy" />
             </ImageContainer>
+            </a>
           </Item>
           <Item>
             <h2>Transit</h2>
+            <a href="https://transit.diego-nascimento.com" target="blank">
             <ImageContainer>
-              <img src="https://site-do-diego.s3-sa-east-1.amazonaws.com/transit+imagem+2.png" alt="" />
+              <img src={Transit} alt="Pagina Transit" />
             </ImageContainer>
+            </a>
+            
           </Item>
         </Lista>
       </Container>

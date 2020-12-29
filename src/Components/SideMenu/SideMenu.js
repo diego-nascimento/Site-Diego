@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, ButtonMenuContainer, Header, Avatar, ContainerInfo, Menu, Item, Social } from './SideMenu.style';
-import { FaHome, FaUser, FaLinkedin, FaGithub, FaFacebook, FaBars } from 'react-icons/fa';
+import { FaHome, FaUser, FaLinkedin, FaGithub, FaFacebook, FaBars, FaInstagram } from 'react-icons/fa';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
 import { connect } from 'react-redux';
@@ -67,9 +67,10 @@ function SideMenu({ Page, MenuState, dispatch }) {
         </Link>
       </Menu>
       <Social>
-        <FaLinkedin />
-        <FaGithub />
-        <FaFacebook />
+        <a href="https://www.linkedin.com/in/diego-carvalhais-de-almeida-nascimento-650970143/"><FaLinkedin /></a>
+        <a href="https://github.com/diego-nascimento"><FaGithub /></a>
+        <a href="https://www.facebook.com/diego.carvalhaes"><FaFacebook /></a>
+        <a href="https://www.instagram.com/diego_carvalhais/"><FaInstagram /></a>
       </Social>
     </Container>
   );

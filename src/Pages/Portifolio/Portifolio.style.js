@@ -47,8 +47,9 @@ export const Titulo = styled.h1`
 export const Lista = styled.ul`
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 350px );
   transition: 0.5;
+  
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 350px);
   }
@@ -64,7 +65,6 @@ export const Item = styled.li`
   border: 1px solid white;
   border-radius: 15px;
   transition: 0.3s;
-  height: 500px;
 
   :hover {
     transform: scale(1.02);
@@ -87,6 +87,5 @@ export const Item = styled.li`
 export const ImageContainer = styled.div`
   width: 100%;
   overflow-y: hidden;
-  height: 400px;
   border-radius: 10px;
 `;

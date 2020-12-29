@@ -149,25 +149,30 @@ export const Item = styled.li.attrs((props) => ({
 export const Social = styled.footer`
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 26px;
   width: 100%;
   position: absolute;
   bottom: 0;
   padding: 30px;
   justify-content: center;
 
+  a:not(:first-child) {
+    margin-left: 20px;
+  }
+ 
+
   svg {
     cursor: pointer;
     transition: 0.3s;
+    color: ${Styles.asideFontColor};
+
 
     :hover {
       color: white;
     }
   }
 
-  svg:not(:first-child) {
-    margin-left: 20px;
-  }
+  
 
   @media (max-width: 1200px) {
     padding: 10px;
