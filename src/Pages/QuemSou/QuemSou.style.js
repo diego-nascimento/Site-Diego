@@ -3,7 +3,6 @@ import { Styles } from '../../GlobalStyles/Styles';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
   background: white;
   display: flex;
   background: ${Styles.asideSelectedBG};

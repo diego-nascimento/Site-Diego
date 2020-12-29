@@ -3,7 +3,7 @@ import { Styles } from '../../GlobalStyles/Styles';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: white;
   display: flex;
   background: ${Styles.asideSelectedBG};
@@ -15,7 +15,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 5vh 10px;
   flex-direction: column;
   z-index: 50;
   position: relative;
@@ -30,9 +29,9 @@ export const Titulo = styled.h1`
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 2px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 
   @media (max-width: 1200px) {
     font-size: 2em;
@@ -54,6 +53,7 @@ export const Lista = styled.ul`
   margin-top: 20px;
   align-items: center;
   transition: 0.5s;
+  margin-bottom: 20px;
 
   @media (max-width: 1100px) {
     flex-direction: column;
@@ -69,7 +69,8 @@ export const Item = styled.li`
   padding: 20px 10px;
   transition: 0.7s;
   border-radius: 25px;
-  width: 450px;
+  width: 92%;
+  max-width: 450px;
   margin: 20px 20px;
 
   :hover {
@@ -85,11 +86,13 @@ export const Item = styled.li`
     font-size: 1.3rem;
     color: ${Styles.asideFontColor};
     margin-top: 20px;
+    white-space: nowrap;
   }
 
   p {
     color: white;
-    text-align: justify;
+    text-align: center;
+    font-size: .7rem;
     letter-spacing: 1px;
     line-height: 1.8rem;
     margin-top: 20px;
