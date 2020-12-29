@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   background: ${Styles.asideSelectedBG};
   position: relative;
   overflow-x: hidden;
+  
 `;
 
 export const Container = styled.div`
@@ -49,6 +50,8 @@ export const Lista = styled.ul`
   grid-gap: 30px;
   grid-template-columns: repeat(3, 350px );
   transition: 0.5;
+  padding-bottom: 30px;
+  
   
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 350px);
@@ -56,6 +59,7 @@ export const Lista = styled.ul`
 
   @media (max-width: 800px) {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0px 20px;
   }
 `;
 
