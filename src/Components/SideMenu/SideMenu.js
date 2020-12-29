@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ButtonMenuContainer, Header, Avatar, ContainerInfo, Menu, Item, Social } from './SideMenu.style';
+import {Wrapper, Container, ButtonMenuContainer, Header, Avatar, ContainerInfo, Menu, Item, Social } from './SideMenu.style';
 import { FaHome, FaUser, FaLinkedin, FaGithub, FaFacebook, FaBars, FaInstagram } from 'react-icons/fa';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
@@ -23,10 +23,12 @@ function SideMenu({ Page, MenuState, dispatch }) {
   }
 
   return (
-    <Container MenuState={MenuState} Height={Height}>
+    <Wrapper MenuState={MenuState} Height={Height}>
       <ButtonMenuContainer onClick={() => handleButtonState()}>
         <FaBars />
       </ButtonMenuContainer>
+      <Container Height={Height}>
+      
       <Header>
         <Avatar />
         <ContainerInfo>
@@ -72,7 +74,9 @@ function SideMenu({ Page, MenuState, dispatch }) {
         <a href="https://www.facebook.com/diego.carvalhaes"><FaFacebook /></a>
         <a href="https://www.instagram.com/diego_carvalhais/"><FaInstagram /></a>
       </Social>
-    </Container>
+      </Container>
+      
+    </Wrapper>
   );
 }
 

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   display: flex;
   background: ${Styles.asideSelectedBG};
   position: relative;
+  height: 100%;
   overflow-x: hidden;
 `;
 
@@ -33,7 +34,7 @@ export const RocketMoviment = keyframes`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: .5fr 2fr;
   align-items: center;
 
   @media (max-width: 700px) {

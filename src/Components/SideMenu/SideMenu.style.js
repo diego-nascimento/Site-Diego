@@ -1,22 +1,29 @@
 import styled from 'styled-components';
 import { Styles } from '../../GlobalStyles/Styles';
 
-export const Container = styled.aside`
+export const Wrapper = styled.aside`
   height: ${(props) => props.Height + 'px'};
   width: 425px;
+  height: 100vh;
   background-color: ${Styles.asideBGColor};
-  color: ${Styles.asideFontColor};
-  display: flex;
-  flex-direction: column;
   position: relative;
   transition: 0.5s;
   max-width: 70%;
-  z-index: 99;
-  font-family: 'Roboto', sans-serif;
+  z-index: 999;
+  
 
   @media (max-width: 1200px) {
     transform: ${(props) => (props.MenuState === 0 ? 'translateX(-100%)' : 'translateX(0%)')};
   }
+`;
+
+export const Container = styled.div`
+  position: fixed;
+  height: ${(props) => props.Height + 'px'};
+  color: ${Styles.asideFontColor};
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ButtonMenuContainer = styled.div`
@@ -33,6 +40,8 @@ export const ButtonMenuContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.9);
   visibility: hidden;
   opacity: 0;
+  z-index: 99;
+
 
   @media (max-width: 1200px) {
     opacity: 1;

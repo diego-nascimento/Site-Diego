@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   transition: 0.5s;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   overflow-y: scroll;
   flex-grow: 1;
@@ -13,12 +14,10 @@ export const Container = styled.main`
   @media (max-width: 1200px) {
     position: absolute;
     left: ${(props) => (props.MenuState === 0 ? '0px' : '425px')};
-    z-index: 1;
   }
 
   @media (max-width: 550px) {
     position: absolute;
     left: ${(props) => (props.MenuState === 0 ? '0px' : '70%')};
-    z-index: 1;
   }
 `;

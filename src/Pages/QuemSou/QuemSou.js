@@ -42,14 +42,10 @@ function QuemSou(props) {
             para resolução de problemas, que iam de problemas em programas até realizações de configurações em Firewalls
             e Servidores.
           </p>
-          <p>
-            Apesar da grande gama de conhecimentos que adquiri durante essa jornada, a área de infraestrutura nunca foi
-            a minha paixão.
-          </p>
+
           <p>
             Após isso me envolvi no desenvolvimento de uma <span>ferramenta de BI</span> que se chamava{' '}
-            <span>Qira</span>, onde a partir de meus conhecimentos em tecnologias <span>web</span> e <span>mobile</span>
-            , estive durante algum tempo desenvolvendo <span>prototipos de telas de Dashboard</span> para a ferramenta.
+            <span>Qira</span>, onde estive criando consultas <span>SQLs</span> para alimentar a ferramenta com dados dos bancos das empresas.  além disso, desenvolvi <span>prototipos de telas de Dashboards</span> para a ferramenta utilizando ReactJS e Flutter.
           </p>
           <p>
             Com a necessidade de um backend mais proprio para a ferramenta, conheci o <span>NodeJs</span>, onde conheci
