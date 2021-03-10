@@ -1,7 +1,6 @@
 import React from 'react';
 import * as PageActions from '../../store/modules/Page/actions';
 import { connect } from 'react-redux';
-import IntroBackground from '../../Components/IntroBackground/IntroBackground';
 import { Wrapper, Container, Titulo, TextContainer } from './Contato.style';
 
 function Contato(props) {
@@ -10,7 +9,6 @@ function Contato(props) {
   });
   return (
     <Wrapper>
-      <IntroBackground />
       <Container>
         <Titulo>Contato</Titulo>
         <TextContainer>
@@ -18,7 +16,10 @@ function Contato(props) {
           <h2>Meus contatos estão abaixo:</h2>
           <div>
             <span>Whatsapp:</span>
-            <a href="https://api.whatsapp.com/send?phone=5532999107767" target="blank">
+            <a
+              href="https://api.whatsapp.com/send?phone=5532999107767"
+              target="blank"
+            >
               (32) 9 9910-7767
             </a>
           </div>

@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   background: ${Styles.asideSelectedBG};
   position: relative;
   overflow-x: hidden;
-  
 `;
 
 export const Container = styled.div`
@@ -47,11 +46,10 @@ export const Titulo = styled.h1`
 export const Lista = styled.ul`
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(3, 350px );
+  grid-template-columns: repeat(3, 350px);
   transition: 0.5;
   padding-bottom: 30px;
-  
-  
+
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 350px);
   }

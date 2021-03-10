@@ -2,10 +2,12 @@ import React from 'react';
 import { Container } from './Main.style';
 import { connect } from 'react-redux';
 import Route from '../../route';
+import IntroBackground from '../../Components/IntroBackground/IntroBackground';
 
-function Main({ MenuState, children }) {
+function Main({ MenuState }) {
   return (
     <Container MenuState={MenuState}>
+      <IntroBackground />
       <Route />
     </Container>
   );

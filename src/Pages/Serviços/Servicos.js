@@ -1,7 +1,6 @@
 import React from 'react';
 import * as PageActions from '../../store/modules/Page/actions';
 import { connect } from 'react-redux';
-import IntroBackground from '../../Components/IntroBackground/IntroBackground';
 import { Wrapper, Container, Titulo, Lista, Item } from './Servicos.style';
 
 import { CgWebsite } from 'react-icons/cg';
@@ -14,7 +13,6 @@ function Servicos(props) {
 
   return (
     <Wrapper>
-      <IntroBackground />
       <Container>
         <Titulo>Serviços</Titulo>
         <Lista>
@@ -22,8 +20,8 @@ function Servicos(props) {
             <CgWebsite />
             <h2>Desenvolvedor de WebSites</h2>
             <p>
-              HTMl, CSS, Javascript, ReactJs... Sempre focado no desenvolvimento de páginas responsivas, bonitas e
-              funcionais.
+              HTMl, CSS, Javascript, ReactJs... Sempre focado no desenvolvimento
+              de páginas responsivas, bonitas e funcionais.
             </p>
           </Item>
           <Item>

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, TextContainer } from './Introducao.style';
-
-import BackgroundIntro from '../../Components/IntroBackground/IntroBackground';
 import Typical from 'react-typical';
 import ReactTypingEffect from 'react-typing-effect';
 import { connect } from 'react-redux';
@@ -14,7 +12,6 @@ function Introducao(props) {
 
   return (
     <Container>
-      <BackgroundIntro />
       <TextContainer>
         <Typical steps={['Diego Nascimento']} wrapper="h1" />
 

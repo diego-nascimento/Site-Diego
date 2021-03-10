@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { Styles } from '../GlobalStyles/Styles';
+
 export const GlobalStyles = createGlobalStyle`
 
   *{
@@ -40,4 +41,6 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     background-color: ${Styles.asideBGColor}
   }
+
+  
 `;
