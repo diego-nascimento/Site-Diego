@@ -34,7 +34,7 @@ export const RocketMoviment = keyframes`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: .5fr 2fr;
+  grid-template-columns: 0.5fr 2fr;
   align-items: center;
 
   @media (max-width: 700px) {
@@ -79,6 +79,7 @@ export const SpaceShip = styled.div`
 
 export const Textos = styled.div`
   padding: 40px 40px;
+  z-index: 99;
   @media (max-width: 1200px) {
     padding: 30px 30px;
   }

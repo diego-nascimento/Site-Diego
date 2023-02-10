@@ -69,18 +69,19 @@ function SideMenu({ Page, MenuState, dispatch }) {
               <span>Quem Sou</span>
             </Item>
           </Link>
+          <Link to="/experiencias">
+            <Item MyPage={2} Page={Page} onClick={() => handleMenuClick(2)}>
+              <BsGrid3X3GapFill />
+              <span>Experiencias</span>
+            </Item>
+          </Link>
           <Link to="/portifolio">
             <Item MyPage={2} Page={Page} onClick={() => handleMenuClick(2)}>
               <BsGrid3X3GapFill />
               <span>Portifolio</span>
             </Item>
           </Link>
-          <Link to="/Servicos">
-            <Item MyPage={3} Page={Page} onClick={() => handleMenuClick(3)}>
-              <GrMail />
-              <span>Serviços</span>
-            </Item>
-          </Link>
+
           <Link to="/contato">
             <Item MyPage={4} Page={Page} onClick={() => handleMenuClick(4)}>
               <GrMail />

@@ -40,30 +40,17 @@ function QuemSou(props) {
         <Textos>
           <h1>Quem Sou??</h1>
           <p>
-            Meu nome é <span>Diego Carvalhais de Almeida Nascimento</span>, sou
-            formado em
-            <span> Ciências da Computação </span> pela faculdade UNIFAGOC e sou{' '}
-            <span>Tecnico em Informatica</span> pelo IFET-RP.
-          </p>
-          <p>
-            Trabalhei durante um ano como Suporte na empresa{' '}
-            <span> Dual Soluções</span>, onde realizava atendimentos para
-            resolução de problemas, que iam de problemas em programas até
-            realizações de configurações em Firewalls e Servidores.
+            Desenvolvedor Sênior com 4 anos de experiência como Front-end
+            atuando principalmente com: React, Typescript, Nextjs, React Native
+            e Nodejs.
           </p>
 
           <p>
-            Após isso me envolvi no desenvolvimento de uma{' '}
-            <span>ferramenta de BI</span> que se chamava <span>Qira</span>, onde
-            estive criando consultas <span>SQLs</span> para alimentar a
-            ferramenta com dados dos bancos das empresas. além disso, desenvolvi{' '}
-            <span>prototipos de telas de Dashboards</span> para a ferramenta
-            utilizando ReactJS e Flutter.
-          </p>
-          <p>
-            Com a necessidade de um backend mais proprio para a ferramenta,
-            conheci o <span>NodeJs</span>, onde conheci e estudei com bem mais
-            afinco a <span>Stack Javascript</span> que estudo até atualmente.
+            Desde de 2008 sou o cara mais apaixonado por tecnologia que eu
+            conheço! Meu primeiro contato acadêmico com TI foi na minha na
+            formação técnica há cerca de 15 anos atrás. Sempre fui curioso e
+            tive cede de aprender o que me interessa e foi assim que de Técnico
+            em informática alcancei o Bacharel em Ciências da Computação.
           </p>
           <p>
             Para conhecer meus trabalhos, você pode
@@ -76,7 +63,7 @@ function QuemSou(props) {
             </Link>{' '}
             para ser enviado a minha página de contato!
           </p>
-          <p style={{ textAlign: 'center' }}>Te aguardo lá!!</p>
+          <p>Te aguardo lá!!</p>
         </Textos>
       </Container>
     </Wrapper>

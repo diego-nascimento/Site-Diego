@@ -15,6 +15,10 @@ function Contato(props) {
           <p>Se quiser conversar, ou entrar em contato, estou sempre online!</p>
           <h2>Meus contatos estão abaixo:</h2>
           <div>
+            <span>Email:</span>
+            <span>diego.ca.nascimento@gmail.com</span>
+          </div>
+          <div>
             <span>Whatsapp:</span>
             <a
               href="https://api.whatsapp.com/send?phone=5532999107767"
@@ -25,9 +29,18 @@ function Contato(props) {
           </div>
 
           <div>
-            <span>Instagram:</span>
-            <a href="https://www.instagram.com/diego_carvalhais" target="blank">
-              @diego_carvalhais
+            <span>LinkedIn:</span>
+            <a
+              href="https://www.linkedin.com/in/diego-carvalhais-de-almeida-nascimento-650970143/"
+              target="blank"
+            >
+              Diego Nascimento
+            </a>
+          </div>
+          <div>
+            <span>Github:</span>
+            <a href="https://github.com/diego-nascimento" target="blank">
+              Diego-Nascimento
             </a>
           </div>
         </TextContainer>
